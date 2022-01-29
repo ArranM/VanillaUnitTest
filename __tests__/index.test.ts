@@ -15,10 +15,9 @@ describe("Initial index javascript tests ", () => {
         jest.resetModules();
     });
 
-
     it('should run return new text for #hello-test id', () => {
 
-        require('../dist/scripts/index');
+        require('../dist/bundle');
 
         let runMeFunction = document.body.querySelector<HTMLButtonElement>("#hello-test");
 
